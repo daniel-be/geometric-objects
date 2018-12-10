@@ -115,6 +115,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="line_segment.hpp" />
     <ClInclude Include="point.hpp" />
   </ItemGroup>
   <ItemGroup>
