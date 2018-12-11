@@ -1,5 +1,6 @@
-#include "point.hpp"
 #include <cmath>
+
+#include "geometric_objects.hpp"
 
 template <int DIM>
 Point<DIM>::Point(const Point& p)
@@ -39,6 +40,22 @@ double distance(const Point<DIM>& p, const Point<DIM>& q)
 	{
 		if (p.x[i] < q.x[i]) d += (q.x[i] - p.x[i]) * (q.x[i] - p.x[i]);
 		else d += (p.x[i] - q.x[i]) * (p.x[i] - q.x[i]);
+	}
+
+	return std::sqrt(d);
+}
+
+template <int DIM>
+Box<DIM>::Box(const Point<DIM>& lo, const Point<DIM>& hi) : lo(lo), hi(hi) { }
+
+template<int DIM>
+double distance(const Box<DIM>& b, const Point<DIM>& p)
+{
+	double d;
+	for (int i = 0; i < DIM; i++)
+	{
+		if (p.x[i] < b.lo.x[i]) d += (b.lo.x[i] - p.x[i]) * (b.lo.x[i] - p.x[i]);
+		if (p.x[i] > b.hi.x[i]) d += (p.x[i] - b.hi.x[i]) * (p.x[i] - b.hi.x[i]);
 	}
 
 	return std::sqrt(d);

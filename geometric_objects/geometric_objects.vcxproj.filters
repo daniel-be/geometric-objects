@@ -15,21 +15,12 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="point.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="line_segment.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="box.hpp">
+    <ClInclude Include="geometric_objects.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="point.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="box.cpp">
+    <ClCompile Include="geometric_objects.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

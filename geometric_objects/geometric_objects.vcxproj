@@ -115,13 +115,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="box.hpp" />
-    <ClInclude Include="line_segment.hpp" />
-    <ClInclude Include="point.hpp" />
+    <ClInclude Include="geometric_objects.hpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="box.cpp" />
-    <ClCompile Include="point.cpp" />
+    <ClCompile Include="geometric_objects.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
