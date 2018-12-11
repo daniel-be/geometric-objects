@@ -9,3 +9,6 @@ struct Point
 	Point& operator=(const Point& p);
 	bool operator==(const Point& p);
 };
+
+template<int DIM>
+double distance(const Point<DIM>& p, const Point<DIM>& q);

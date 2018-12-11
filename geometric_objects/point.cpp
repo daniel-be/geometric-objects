@@ -1,4 +1,5 @@
 #include "point.hpp"
+#include <cmath>
 
 template <int DIM>
 Point<DIM>::Point(const Point& p)
@@ -28,4 +29,17 @@ bool Point<DIM>::operator==(const Point& p)
 {
 	for (int i = 0; i < DIM; i++) if (this->x[i] != p.x[i]) return false;
 	return true;
+}
+
+template<int DIM>
+double distance(const Point<DIM>& p, const Point<DIM>& q)
+{
+	double d;
+	for (int i = 0; i < DIM; i++)
+	{
+		if (p.x[i] < q.x[i]) d += (q.x[i] - p.x[i]) * (q.x[i] - p.x[i]);
+		else d += (p.x[i] - q.x[i]) * (p.x[i] - q.x[i]);
+	}
+
+	return std::sqrt(d);
 }
