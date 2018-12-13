@@ -117,9 +117,6 @@
   <ItemGroup>
     <ClInclude Include="geometric_objects.hpp" />
   </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="geometric_objects_impl.hpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

@@ -19,9 +19,4 @@
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="geometric_objects_impl.hpp">
-      <Filter>Header Files</Filter>
-    </ClCompile>
-  </ItemGroup>
 </Project>
