@@ -18,15 +18,3 @@ struct Line_segment
 {
 	Point<DIM> s, e;
 };
-
-template<int DIM>
-struct Box
-{
-	Point<DIM> lo, hi;
-	Box();
-	Box(const Point<DIM>& lo, const Point<DIM>& hi);
-	~Box();
-};
-
-template<int DIM>
-double distance(const Box<DIM>& b, const Point<DIM>& p);
